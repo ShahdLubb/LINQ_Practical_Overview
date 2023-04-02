@@ -19,7 +19,7 @@ namespace CalculatedSequence1
             // Uncomment:
             // return names.???();
             //// START SOLUTION ////
-            return names.Select(_ => $"{_.Last}, {_.First}");
+            return names.Select(name => $"{name.Last}, {name.First}").ToList();
             //// END SOLUTION ////
         }
     }
