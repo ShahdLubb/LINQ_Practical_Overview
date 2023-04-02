@@ -15,13 +15,10 @@ namespace AllTogether1
         public static string GetTheLastWord(IEnumerable<string> words)
         {
             return words
-                // .???().???() ... .???()
-                //// START SOLUTION ////
-                .Where(_ => _.Contains("e"))
-                .OrderBy(_ => _)
-                .Select(_ => $"The last word is {_}")
+                .Where(word => word.Contains("e"))
+                .OrderBy(word => word)
+                .Select(word => $"The last word is {word}")
                 .LastOrDefault()
-                //// END SOLUTION ////
                 ;
         }
     }

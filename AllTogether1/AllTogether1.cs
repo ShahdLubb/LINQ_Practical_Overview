@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace AllTogether1
@@ -11,12 +13,8 @@ namespace AllTogether1
         // any loops.
         public static bool TestForSquares(IEnumerable<int> numbers, IEnumerable<int> squares)
         {
-            return numbers
-                // .???().???() ... .???()
-                //// START SOLUTION ////
-                .Select(_ => _ * _).SequenceEqual(squares)
-                //// END SOLUTION ////
-                ;
+            
+           return squares.SequenceEqual(from number in numbers select number*number);
         }
     }
 }
