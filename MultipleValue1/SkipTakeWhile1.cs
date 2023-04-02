@@ -14,7 +14,7 @@ namespace MultipleValue1
             // Uncomment:
             // return words.???();
             //// START SOLUTION ////
-            return words.SkipWhile(_ => _ != "start").TakeWhile(_ => _ != "end");
+            return words.SkipWhile(str => str != "start").TakeWhile(str => str != "end");
             //// END SOLUTION ////
         }
     }

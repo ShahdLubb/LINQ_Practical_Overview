@@ -12,7 +12,7 @@ namespace MultipleValue1
             // Uncomment:
             // return words.???();
             //// START SOLUTION ////
-            return words.Distinct().Where(_ => _.Length < 4);
+            return words.Distinct().Where(str => str.Length <4);   
             //// END SOLUTION ////
         }
     }
