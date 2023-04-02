@@ -28,7 +28,7 @@ namespace ChangeOrder1
             // Uncomment:
             // return names.???();
             //// START SOLUTION ////
-            return names.OrderByDescending(_ => _.Last);
+            return names.OrderByDescending(name => name.Last).ToList();
             //// END SOLUTION ////
         }
     }

@@ -21,8 +21,7 @@ namespace ChangeOrder2
         {
             // Uncomment:
             // return names.???();
-            //// START SOLUTION ////
-            return names.OrderBy(_ => _.Last).ThenBy(_ => _.First).ThenBy(_ => _.Middle);
+            return names.OrderBy(name => name.Last).ThenBy(name => name.First).ThenBy(name => name.Middle).ToList();    
             //// END SOLUTION ////
         }
     }
