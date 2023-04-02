@@ -12,7 +12,7 @@ namespace SingleCalculatedValue1
             // Uncomment:
             // return words.???();
             //// START SOLUTION ////
-            return words.Count(_ => _.StartsWith(startString));
+            return words.Count(a => a.StartsWith(startString));
             //// END SOLUTION ////
         }
     }

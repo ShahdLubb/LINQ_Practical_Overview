@@ -11,7 +11,7 @@ namespace SingleCalculatedValue1
             // Uncomment:
             // return words.???();
             //// START SOLUTION ////
-            return words.Min(_ => _.Length);
+            return words.Min(word => word.Length);
             //// END SOLUTION ////
         }
     }
