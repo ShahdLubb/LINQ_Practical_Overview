@@ -12,7 +12,7 @@ namespace SingleValue1
             // Uncomment:
             // return words.???();
             //// START SOLUTION ////
-            return words.First(_ => _.Length == 1);
+            return words.First(word => word.Length ==1);
             //// END SOLUTION ////
         }
 
@@ -23,7 +23,7 @@ namespace SingleValue1
             // Uncomment:
             // return words.???();
             //// START SOLUTION ////
-            return words.Last(_ => _.Contains("her"));
+            return words.Last(str => str.Contains("her"));
             //// END SOLUTION ////
         }
 
@@ -35,6 +35,7 @@ namespace SingleValue1
             // return words.???();
             //// START SOLUTION ////
             return words.ElementAtOrDefault(4);
+            
             //// END SOLUTION ////
         }
 
@@ -46,6 +47,7 @@ namespace SingleValue1
             // return words.???();
             //// START SOLUTION ////
             return words.LastOrDefault();
+           
             //// END SOLUTION ////
         }
     }
