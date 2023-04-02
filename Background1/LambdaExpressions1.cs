@@ -10,7 +10,7 @@ namespace Background1
         //public static Func<int, int> GetNextNumber = ??? => ???;
         //// END UNCOMMENT ////
         //// START SOLUTION ////
-        public static Func<int, int> GetNextNumber = _ => _ + 1;
+        public static Func<int, int> GetNextNumber = x => x + 1;
         //// END SOLUTION ////
     }
 }
